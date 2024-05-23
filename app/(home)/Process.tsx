@@ -1,23 +1,47 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import {
+  bottomSlideUp,
+  display,
+  rightSlideIn,
+  scaleOut,
+  staggerContainer,
+} from "../animations";
 
 const Process = () => {
   return (
     <>
       {/* Layout 241 */}
-      <section className="flex flex-col px-8 lg:px-20 py-20 bg-cwhite text-cblack items-start justify-center gap-10 lg:gap-20">
+      <motion.section
+        initial="initial"
+        whileInView="animate"
+        variants={staggerContainer}
+        className="flex flex-col px-8 lg:px-20 py-14 lg:py-20 bg-cwhite text-cblack items-start justify-center gap-10 "
+      >
         <section className="flex flex-col lg:flex-row w-full justify-between gap-4 lg:gap-2 items-">
           <div className="flex flex-col gap-4 lg:gap-8">
-            <p className="text-sm font-light font-sansation">Process</p>
-            <h2 className="text-3xl lg:text-5xl font-sansation w-2/3">
+            <p className=" font-light font-sansation">Process</p>
+            <motion.h2
+              initial="initial"
+              whileInView="animate"
+              variants={scaleOut}
+              className="text-3xl lg:text-5xl font-sansation w-2/3"
+            >
               Experience the{" "}
               <span className="text-corange"> {" Design Process "}</span> with
               Us
-            </h2>
+            </motion.h2>
           </div>
-          <div className="flex flex-row gap-12 ">
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            variants={window.innerWidth <= 1023 ? scaleOut : rightSlideIn}
+            className="flex flex-row gap-12 "
+          >
             <Image
               src="/Images/process1.svg"
               alt="Process1 image"
@@ -32,9 +56,14 @@ const Process = () => {
               height={50}
               className="hidden lg:flex lg:w-[50%]"
             />{" "}
-          </div>
+          </motion.div>
         </section>
-        <section className="flex flex-col lg:flex-row gap-6 lg:gap-14 ">
+        <motion.section
+          initial="initial"
+          whileInView="animate"
+          variants={bottomSlideUp}
+          className="flex flex-col lg:flex-row gap-6 lg:gap-14 "
+        >
           <div className="flex flex-col gap-4 lg:gap-10">
             <Image
               src="/Images/logo.svg"
@@ -86,16 +115,21 @@ const Process = () => {
               flawless execution.
             </p>
           </div>
-        </section>
-        <div className="flex flex-row gap-4">
+        </motion.section>
+        <motion.div
+          initial="initial"
+          whileInView="animate"
+          variants={display}
+          className="flex flex-row gap-4"
+        >
           <Link href="/" className="px-6 py-3 text-corange">
             Get Started
           </Link>
           <Link href="/" className="px-6 py-3 flex items-center ">
             Button <IoIosArrowForward />
           </Link>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
     </>
   );
 };

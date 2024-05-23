@@ -11,7 +11,7 @@ import Testimonials from "./Testimonials";
 
 const LandingPage = () => {
   return (
-    <main className=" font-poppins">
+    <main className=" font-poppins w-full ">
       <Heroheader />
       <Feature />
       <Cta />

@@ -1,18 +1,48 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Navbar from "../components/Navbar";
+import { motion } from "framer-motion";
+
+import { bottomSlideUp, display, leftSlideIn, scaleOut } from "../animations";
 
 const Heroheader = () => {
   return (
     <>
-      <div className="flex px-8 lg:px-20 py-4 lg:py-20  flex-col lg:flex-row gap-12 justify-center items-end text-[#1C1C1C] ">
+      <motion.div
+        initial="initial"
+        whileInView="animate"
+        exit="exit"
+        variants={display}
+        className="flex px-8 lg:px-20 py-4 lg:py-10  flex-col lg:flex-row gap-12 justify-center items-end text-[#1C1C1C] "
+      >
         <div className="flex flex-col gap-10 lg:w-1/2">
-          <Navbar />
-          <h1 className="text-[30px] lg:text-[60px] font-sansation">
+          <motion.div
+            className=""
+            variants={leftSlideIn}
+            initial="initial"
+            whileInView="animate"
+            exit="exit"
+          >
+            <Navbar />
+          </motion.div>
+          <motion.h1
+            initial="initial"
+            whileInView="animate"
+            exit="exit"
+            variants={scaleOut}
+            className="text-[30px] lg:text-[50px] font-sansation"
+          >
             Transforming Spaces with Innovative Interior Design
-          </h1>
-          <div className="flex flex-col gap-8">
+          </motion.h1>
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            exit="exit"
+            variants={bottomSlideUp}
+            className="flex flex-col gap-8"
+          >
             <p className="font-poppins text-xl lg:text-2xl lg:w-[70%]">
               Welcome to{" "}
               <span className="text-[#FF792E] underline-offset-4 underline decoration-4 decoration-[#1C1C1C]">
@@ -35,8 +65,14 @@ const Heroheader = () => {
                 About us
               </Link>
             </div>
-          </div>
-          <div className="flex flex-col lg:flex-row gap-12 items-end">
+          </motion.div>
+          <motion.div
+            initial="initial"
+            whileInView="animate"
+            exit="exit"
+            variants={leftSlideIn}
+            className="flex flex-col lg:flex-row gap-12 items-end"
+          >
             <Image
               src="/Images/heroheader-1.svg"
               alt="Header Image"
@@ -51,17 +87,24 @@ const Heroheader = () => {
               width={100}
               height={100}
             />
-          </div>
+          </motion.div>
         </div>
-
-        <Image
-          src="/Images/hero.svg"
-          alt="Header Image"
-          className="w-full lg:w-[45%]  object-cover  rounded-3xl"
-          width={100}
-          height={100}
-        />
-      </div>
+        <motion.div
+          className="w-full lg:w-[45%]"
+          initial="initial"
+          whileInView="animate"
+          exit="exit"
+          variants={scaleOut}
+        >
+          <Image
+            src="/Images/hero.svg"
+            alt="Header Image"
+            className="w-full  object-cover  rounded-3xl"
+            width={100}
+            height={100}
+          />
+        </motion.div>
+      </motion.div>
     </>
   );
 };

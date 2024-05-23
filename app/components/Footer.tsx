@@ -12,8 +12,8 @@ const Footer = () => {
   return (
     <>
       {/* Footer  3*/}
-      <section className="flex flex-col px-8 md:px-24 py-10 md:py-40 bg-cwhite text-cblack items-center justify-start  ">
-        <div className="flex flex-col  md:flex-row w-full gap-20 justify-between py-20">
+      <section className="flex flex-col px-8 lg:px-24 py-10 lg:py-40 bg-cwhite text-cblack items-center justify-start  ">
+        <div className="flex flex-col  lg:flex-row w-full gap-20 justify-between py-20">
           <div className="flex flex-col gap-4 lg:gap-8 text-wrap">
             <Image
               src={"/Images/logobrand.svg"}
@@ -39,7 +39,7 @@ const Footer = () => {
               <FaYoutube />
             </div>
           </div>
-          <div className="flex flex-row gap-24 md:px-10">
+          <div className="flex flex-row gap-24 lg:px-10">
             <div className="flex flex-col gap-4">
               <p className="font-sansation text-corange">Column One</p>
               <p>Link One</p>
@@ -58,9 +58,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-8 py-10  border-t-2 border-black justify-between w-full">
+        <div className="flex flex-col lg:flex-row gap-8 py-10  border-t-2 border-black justify-between w-full">
           <span>© 2024 Growwebon. All rights reserved.</span>
-          <div className="flex flex-col gap-2 text-sm md:flex-row">
+          <div className="flex flex-col gap-2 text-sm lg:flex-row">
             <p>Privacy Policy</p>
             <p>Terms of Service</p>
             <p>Cookeis Settings</p>
