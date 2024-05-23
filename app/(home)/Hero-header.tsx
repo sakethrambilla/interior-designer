@@ -55,7 +55,7 @@ const Heroheader = () => {
         </div>
 
         <Image
-          src="/Images/heroheader.svg"
+          src="/Images/hero.svg"
           alt="Header Image"
           className="w-full lg:w-[45%]  object-cover  rounded-3xl"
           width={100}
