@@ -21,7 +21,7 @@ const Benefits = () => {
       >
         <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-20  ">
           <motion.h1
-            variants={window.innerWidth <= 1023 ? scaleOut : leftSlideIn}
+            variants={global.window.innerWidth <= 1023 ? scaleOut : leftSlideIn}
             className="text-3xl lg:text-4xl font-sansation"
           >
             Experience the Difference with Our {""}
@@ -30,7 +30,9 @@ const Benefits = () => {
             <span className="text-corange">Exceptional Customer Service</span>
           </motion.h1>
           <motion.div
-            variants={window.innerWidth <= 1023 ? scaleOut : rightSlideIn}
+            variants={
+              global.window.innerWidth <= 1023 ? scaleOut : rightSlideIn
+            }
             className="flex flex-col lg:text-sm gap-8 lg:gap-12 lg:max-w-[50%] "
           >
             <p className="w-full text-wrap lg:text-xl ">

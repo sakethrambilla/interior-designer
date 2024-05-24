@@ -82,7 +82,7 @@ const Feature = () => {
           className="lg:w-[45%] xl:w-[40%] object-cover"
           initial="initial"
           whileInView="animate"
-          variants={window.innerWidth <= 1023 ? scaleOut : rightSlideIn}
+          variants={global.window.innerWidth <= 1023 ? scaleOut : rightSlideIn}
         >
           <Image
             src="/Images/feature.svg"

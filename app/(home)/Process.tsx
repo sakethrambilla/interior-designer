@@ -39,7 +39,9 @@ const Process = () => {
           <motion.div
             initial="initial"
             whileInView="animate"
-            variants={window.innerWidth <= 1023 ? scaleOut : rightSlideIn}
+            variants={
+              global.window.innerWidth <= 1023 ? scaleOut : rightSlideIn
+            }
             className="flex flex-row gap-12 "
           >
             <Image

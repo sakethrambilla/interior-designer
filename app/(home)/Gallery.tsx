@@ -39,7 +39,7 @@ const Gallery = () => {
             className="flex flex-col gap-6"
             initial="initial"
             whileInView="animate"
-            variants={window.innerWidth <= 1023 ? scaleOut : leftSlideIn}
+            variants={global.window.innerWidth <= 1023 ? scaleOut : leftSlideIn}
           >
             <div className=" relative cursor-ocursor ">
               <Image
@@ -81,7 +81,9 @@ const Gallery = () => {
             className="flex flex-col gap-6"
             initial="initial"
             whileInView="animate"
-            variants={window.innerWidth <= 1023 ? scaleOut : rightSlideIn}
+            variants={
+              global.window.innerWidth <= 1023 ? scaleOut : rightSlideIn
+            }
           >
             <div className=" relative cursor-ocursor  ">
               <Image
