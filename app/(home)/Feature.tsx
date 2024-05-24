@@ -9,8 +9,10 @@ import {
   scaleOut,
   topSlideDown,
 } from "../animations";
+import { useMediaQuery } from "@mui/material";
 
 const Feature = () => {
+  const isDesktop = useMediaQuery("(min-width:1024px)");
   return (
     <>
       {/* Layout 10 */}
@@ -82,7 +84,7 @@ const Feature = () => {
           className="lg:w-[45%] xl:w-[40%] object-cover"
           initial="initial"
           whileInView="animate"
-          variants={global.window.innerWidth <= 1023 ? scaleOut : rightSlideIn}
+          variants={isDesktop === false ? scaleOut : rightSlideIn}
         >
           <Image
             src="/Images/feature.svg"

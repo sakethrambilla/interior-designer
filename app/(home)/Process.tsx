@@ -11,8 +11,10 @@ import {
   scaleOut,
   staggerContainer,
 } from "../animations";
+import { useMediaQuery } from "@mui/material";
 
 const Process = () => {
+  const isDesktop = useMediaQuery("(min-width:1024px)");
   return (
     <>
       {/* Layout 241 */}
@@ -39,9 +41,7 @@ const Process = () => {
           <motion.div
             initial="initial"
             whileInView="animate"
-            variants={
-              global.window.innerWidth <= 1023 ? scaleOut : rightSlideIn
-            }
+            variants={isDesktop === false ? scaleOut : rightSlideIn}
             className="flex flex-row gap-12 "
           >
             <Image

@@ -8,8 +8,10 @@ import {
   scaleOut,
   staggerContainer,
 } from "../animations";
+import { useMediaQuery } from "@mui/material";
 
 const Benefits = () => {
+  const isDesktop = useMediaQuery("(min-width:1024px)");
   return (
     <>
       {/* Layout 104 */}
@@ -21,7 +23,7 @@ const Benefits = () => {
       >
         <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-20  ">
           <motion.h1
-            variants={global.window.innerWidth <= 1023 ? scaleOut : leftSlideIn}
+            variants={isDesktop === false ? scaleOut : leftSlideIn}
             className="text-3xl lg:text-4xl font-sansation"
           >
             Experience the Difference with Our {""}
@@ -30,9 +32,7 @@ const Benefits = () => {
             <span className="text-corange">Exceptional Customer Service</span>
           </motion.h1>
           <motion.div
-            variants={
-              global.window.innerWidth <= 1023 ? scaleOut : rightSlideIn
-            }
+            variants={isDesktop === false ? scaleOut : rightSlideIn}
             className="flex flex-col lg:text-sm gap-8 lg:gap-12 lg:max-w-[50%] "
           >
             <p className="w-full text-wrap lg:text-xl ">

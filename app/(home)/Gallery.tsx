@@ -10,8 +10,10 @@ import {
   scaleOut,
   topSlideDown,
 } from "../animations";
+import { useMediaQuery } from "@mui/material";
 
 const Gallery = () => {
+  const isDesktop = useMediaQuery("(min-width:1024px)");
   return (
     <>
       {/* Gallery 10 */}
@@ -39,7 +41,7 @@ const Gallery = () => {
             className="flex flex-col gap-6"
             initial="initial"
             whileInView="animate"
-            variants={global.window.innerWidth <= 1023 ? scaleOut : leftSlideIn}
+            variants={isDesktop === false ? scaleOut : leftSlideIn}
           >
             <div className=" relative cursor-ocursor ">
               <Image
@@ -81,9 +83,7 @@ const Gallery = () => {
             className="flex flex-col gap-6"
             initial="initial"
             whileInView="animate"
-            variants={
-              global.window.innerWidth <= 1023 ? scaleOut : rightSlideIn
-            }
+            variants={isDesktop === false ? scaleOut : rightSlideIn}
           >
             <div className=" relative cursor-ocursor  ">
               <Image
