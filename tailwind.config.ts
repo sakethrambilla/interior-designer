@@ -12,6 +12,7 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        footer: "url(/Images/footer.svg)",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
@@ -22,6 +23,10 @@ const config: Config = {
         corange: "#FF792E",
         cyellow: "#FFD12F",
         cwhite: "#EDEDED",
+      },
+      cursor: {
+        bcursor: "url(/Images/cursor.svg), default",
+        ocursor: "url(/Images/cursor2.svg), default",
       },
     },
   },

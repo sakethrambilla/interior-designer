@@ -17,7 +17,7 @@ const Benefits = () => {
         initial="initial"
         whileInView="animate"
         variants={staggerContainer}
-        className=" bg-white px-8 lg:px-20 py-10 lg:py-20   flex flex-col gap-14 text-cblack"
+        className="cursor-bcursor bg-white px-8 lg:px-20 py-10 lg:py-32   flex flex-col gap-14 text-cblack"
       >
         <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-20  ">
           <motion.h1

@@ -19,7 +19,7 @@ const Feature = () => {
         whileInView="animate"
         exit="exit"
         variants={display}
-        className="  flex px-8 lg:px-20 py-14 lg:py-20 flex-col lg:flex-row gap-12 xl:gap-16 items-start justify-center bg-cblack text-cwhite "
+        className="cursor-ocursor  flex px-8 lg:px-20 py-14 lg:py-20 flex-col lg:flex-row gap-12 xl:gap-16 items-start justify-center bg-cblack text-cwhite "
       >
         <div className="flex  lg:py-20 flex-col gap-6 items-start justify-between lg:w-1/2">
           <motion.h3

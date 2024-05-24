@@ -12,7 +12,7 @@ const Testimonials = () => {
         initial="initial"
         whileInView="animate"
         variants={display}
-        className="px-8 lg:px-20 py-20  lg:py-40  flex flex-col gap-8 md:gap-12 items-start justify-center bg-cblack text-cwhite "
+        className="cursor-ocursor px-8 lg:px-20 py-20  lg:py-40  flex flex-col gap-8 md:gap-12 items-start justify-center bg-cblack text-cwhite "
       >
         <div className="flex flex-col gap-4">
           <motion.h1

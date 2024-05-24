@@ -10,7 +10,7 @@ const Cta = () => {
   return (
     <>
       {/* CTA 27 */}
-      <div className="w-full bg-[url('/Images/cta.svg')] 0 bg-cover px-8 lg:px-20 py-14 lg:py-20 text-white">
+      <div className="cursor-bcursor w-full bg-[url('/Images/cta.svg')] 0 bg-cover px-8 lg:px-20 py-14 lg:py-20 text-white">
         <motion.div
           initial="initial"
           whileInView="animate"

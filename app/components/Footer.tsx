@@ -12,8 +12,8 @@ const Footer = () => {
   return (
     <>
       {/* Footer  3*/}
-      <section className="flex flex-col px-8 lg:px-24 py-10 lg:py-40 bg-cwhite text-cblack items-center justify-start  ">
-        <div className="flex flex-col  lg:flex-row w-full gap-20 justify-between py-20">
+      <section className="cursor-bcursor flex flex-col px-8 lg:px-24 py-10 lg:py-40 bg-white text-cblack items-center justify-start  ">
+        <div className="flex flex-col bg-black/10 px-4  rounded-lg  lg:flex-row w-full gap-20 justify-between py-20">
           <div className="flex flex-col gap-4 lg:gap-8 text-wrap">
             <Image
               src={"/Images/logobrand.svg"}

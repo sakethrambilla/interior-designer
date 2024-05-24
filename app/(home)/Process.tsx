@@ -20,7 +20,7 @@ const Process = () => {
         initial="initial"
         whileInView="animate"
         variants={staggerContainer}
-        className="flex flex-col px-8 lg:px-20 py-14 lg:py-20 bg-cwhite text-cblack items-start justify-center gap-10 "
+        className="cursor-bcursor flex flex-col px-8 lg:px-20 py-14 lg:py-20 bg-cwhite text-cblack items-start justify-center gap-10 "
       >
         <section className="flex flex-col lg:flex-row w-full justify-between gap-4 lg:gap-2 items-">
           <div className="flex flex-col gap-4 lg:gap-8">
