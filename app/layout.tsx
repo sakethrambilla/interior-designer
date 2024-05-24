@@ -23,6 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/Images/logo.svg" sizes="any" />
       <body className={`${poppins.className} `}>{children}</body>
     </html>
   );
