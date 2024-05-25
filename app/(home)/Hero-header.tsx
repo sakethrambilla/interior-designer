@@ -71,7 +71,7 @@ const Heroheader = () => {
             whileInView="animate"
             exit="exit"
             variants={leftSlideIn}
-            className="flex flex-col lg:flex-row gap-12 items-end"
+            className="flex flex-col lg:flex-row gap-8 xl:gap-12 items-end"
           >
             <Image
               src="/Images/heroheader-1.svg"
@@ -90,7 +90,7 @@ const Heroheader = () => {
           </motion.div>
         </div>
         <motion.div
-          className="w-full lg:w-1/2"
+          className="relative w-full lg:w-[40%] overflow-hidden py-10"
           initial="initial"
           whileInView="animate"
           exit="exit"
@@ -99,7 +99,7 @@ const Heroheader = () => {
           <Image
             src="/Images/hero.svg"
             alt="Header Image"
-            className="w-full  object-cover  rounded-3xl"
+            className=" w-full h-full right-0 object-cover "
             width={100}
             height={100}
           />
