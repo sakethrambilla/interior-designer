@@ -12,8 +12,8 @@ const Footer = () => {
   return (
     <>
       {/* Footer  3*/}
-      <section className="cursor-bcursor flex flex-col px-8 lg:px-24 py-10 lg:py-40 bg-white text-cblack items-center justify-start  ">
-        <div className="flex flex-col bg-black/10 px-4  rounded-lg  lg:flex-row w-full gap-20 justify-between py-20">
+      <section className="cursor-bcursor font-semibold flex flex-col px-8 lg:px-24 py-10 lg:py-40 bg-[url('https://images.unsplash.com/photo-1586105251261-72a756497a11?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW50ZXJpb3J8ZW58MHwwfDB8fHww')] bg-cover text-cblack items-center justify-start  ">
+        <div className="flex flex-col bg-black/10 backdrop-blur-sm px-4  rounded-t-xl  lg:flex-row w-full gap-20 justify-between py-20">
           <div className="flex flex-col gap-4 lg:gap-8 text-wrap">
             <Image
               src={"/Images/logobrand.svg"}
@@ -58,7 +58,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-8 py-10  border-t-2 border-black justify-between w-full">
+        <div className="flex flex-col lg:flex-row gap-8 py-10  border-t-2 text-corange border-black justify-between w-full">
           <span>© 2024 Growwebon. All rights reserved.</span>
           <div className="flex flex-col gap-2 text-sm lg:flex-row">
             <p>Privacy Policy</p>

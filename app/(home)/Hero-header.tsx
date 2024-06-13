@@ -17,7 +17,7 @@ const Heroheader = () => {
         variants={display}
         className="cursor-bcursor flex px-8 lg:px-20 py-4 lg:py-10  flex-col lg:flex-row gap-12 justify-center items-end text-[#1C1C1C] "
       >
-        <div className="flex flex-col h-full py-10 justify-between gap-10 lg:w-1/2">
+        <div className="flex flex-col h-full py-0 lg:py-10 justify-between gap-10 lg:w-1/2">
           <motion.div
             className=""
             variants={leftSlideIn}
@@ -90,7 +90,7 @@ const Heroheader = () => {
           </motion.div>
         </div>
         <motion.div
-          className="relative w-full lg:w-[40%] overflow-hidden py-10"
+          className="relative w-full h-[50vh] lg:h-[90vh] lg:w-[50%] py-20 rounded-3xl overflow-hidden"
           initial="initial"
           whileInView="animate"
           exit="exit"
@@ -99,7 +99,7 @@ const Heroheader = () => {
           <Image
             src="/Images/hero.svg"
             alt="Header Image"
-            className=" w-full h-full right-0 object-cover "
+            className=" w-full h-full top-0 object-cover absolute  "
             width={100}
             height={100}
           />
